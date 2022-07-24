@@ -40,19 +40,39 @@ section {
   text-align: center;
   background: rgba(62, 59, 59, 0.4);
   border-radius: 25px;
-  padding: var(--container-padding)
+  padding: var(--container-padding);
+  background: rgba(51, 50, 50, 0.25);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 2px );
+  -webkit-backdrop-filter: blur( 2px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 h1, h2 {
   font-size: 3.0rem;
   text-transform: uppercase;
   color: var(--light-color);
-  padding: var(--container-padding)
+  padding: var(--container-padding);
+  text-shadow: rgba(62,66,66,0.4) 0px 6px 10px;
+
 }
 
 input, button {
   margin-bottom: 4rem;
   padding: 3px;
+  width: fit-content;
+}
+
+button {
+  color: white;
+  font-size: 1.8rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background: rgba( 255, 255, 255, 0.25 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 p {
