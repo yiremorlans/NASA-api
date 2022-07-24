@@ -1,8 +1,10 @@
 document.querySelector('button').addEventListener('click', getFetch)
 
+const apiKey = config.SECRET_API_KEY
+
 function getFetch(){
 const userChoice = document.querySelector('input').value
-const fetchPromise = fetch(`https://api.nasa.gov/planetary/apod?api_key=39FDhCUh1uL7Pey4XZciIsdXaVSUYKczwtiV6UXz&date=${userChoice}`)
+const fetchPromise = fetch(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=${userChoice}`)
 
 fetchPromise
     .then(res => res.json()) 
