@@ -1,6 +1,6 @@
-document.querySelector('button').addEventListener('click', getFetch)
-
 const apiKey = config.SECRET_API_KEY
+
+document.querySelector('button').addEventListener('click', getFetch)
 
 function getFetch(){
 const userChoice = document.querySelector('input').value
