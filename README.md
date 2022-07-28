@@ -1,7 +1,7 @@
 # Tallahassee Youth Observatory Club APOD
 Web application incorporating NASA's API Astronomy Picture of the Day. Designed and created for local community of astronomy and stargazing enthusiasts.
 
-**Link to project:** https://github.com/yiremorlans/NASA-api
+**Link to project:** https://stellar-apod.netlify.app/
 
 ![NASA'S APOD web app](https://github.com/yiremorlans/yiremorlans/blob/main/nasa.webp)
 
