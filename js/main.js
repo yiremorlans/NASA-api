@@ -1,8 +1,6 @@
 const apiKey = config.SECRET_API_KEY
 
 document.querySelector('button').addEventListener('click', getFetch)
-
-
 async function getFetch(){
       try {
             
