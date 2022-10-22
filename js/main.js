@@ -2,21 +2,22 @@ const apiKey = config.SECRET_API_KEY
 
 document.querySelector('button').addEventListener('click', getFetch)
 
-function getFetch(){
-const userChoice = document.querySelector('input').value
-const fetchPromise = fetch(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=${userChoice}`)
 
-fetchPromise
-    .then(res => res.json()) 
-    .then(data => {
-          console.log(data)
+async function getFetch(){
+      try {
+            
+            const userChoice = document.querySelector('input').value
+            const fetchPromise = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=${userChoice}`)
+            const data = await fetchPromise.json()
             const picOfDay = new NasaPOD(data.date, data.title, data.explanation, data.url) 
             picOfDay.showInfo()
-          })
-    .catch(err => {
-          console.log(err)
-          })
+            console.log(data) 
 
+      } catch (error) {
+
+            console.log(error)
+      }
+      
 }
 
 class NasaPOD {
