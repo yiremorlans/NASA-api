@@ -1,7 +1,12 @@
 // import {config} from './js/config'
+import Header from './components/Header'
+import Button from './components/Button'
+import SpaceInfo from './components/SpaceInfo'
+// import React from 'react'
+// import { useState } from 'react'
 
 
-// console.log(config)
+
 export default function App() {
     const [date, setDate] = React.useState('')
     const [imageInfo, setImageInfo] = React.useState({})
@@ -24,12 +29,10 @@ export default function App() {
 
     return (
         <>
-            <h1>Travel back to a time</h1>
-            <input type="date" name="date" value={date} onChange={event => setDate(event.currentTarget.value)}/>
-            <button type="button" name="button" onClick={fetchPOD}>Blast off</button>
-            <img src={imageInfo.url} alt="" />
-            <h2>{imageInfo.title}</h2>
-            <p>{imageInfo.explanation}</p>
+        <p>THis is a paragraph.</p>
+            <Header getDate={date} fetchDate={setDate}/>
+            <Button getFetch={fetchPOD}/>
+            <SpaceInfo spaceTitle={imageInfo.title} spaceImg={imageInfo.url} spaceExplanation={imageInfo.explanation}/>
         </>
     )
 }

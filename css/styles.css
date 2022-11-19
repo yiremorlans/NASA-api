@@ -1,0 +1,18 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html { 
+    /* 10px */
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    background: linear-gradient(90deg, rgba(0, 6, 37, 1), rgba(27, 32, 125, 0.3)), url('/img/wormhole_freepik.jpg');
+    background-position: top;
+    background-size: cover;
+}
+
+
